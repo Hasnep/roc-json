@@ -36,4 +36,3 @@ outputStr =
     |> Result.withDefault ""
 
 expect outputStr == inputStr
-
