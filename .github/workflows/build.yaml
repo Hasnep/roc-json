@@ -26,3 +26,5 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Bundle the library
         uses: hasnep/publish-roc-library@main
+        with:
+          library-path: ./Json/
