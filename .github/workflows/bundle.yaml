@@ -1,12 +1,6 @@
 name: Bundle
 
 on:
-  # Run on all PRs
-  pull_request:
-  # Run when a PR is merged into main
-  push:
-    branches:
-      - main
   # Run when a release is published
   release:
     types:
