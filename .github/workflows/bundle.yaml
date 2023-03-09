@@ -19,7 +19,7 @@ jobs:
     permissions:
       actions: read
       checks: read
-      contents: write
+      contents: read
       deployments: read
       discussions: read
       id-token: none
