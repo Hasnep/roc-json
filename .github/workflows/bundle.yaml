@@ -1,4 +1,4 @@
-name: Build
+name: Bundle
 
 on:
   # Run on all PRs
@@ -13,8 +13,8 @@ on:
       - published
 
 jobs:
-  build:
-    name: Build
+  bundle:
+    name: Bundle
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repository
@@ -23,7 +23,7 @@ jobs:
         uses: hasnep/setup-roc@main
         with:
           roc-version: nightly
-      - name: Bundle the library
-        uses: hasnep/publish-roc-library@main
+      - name: Bundle and release the library
+        uses: hasnep/bundle-roc-library@main
         with:
           library-path: ./Json/
