@@ -17,8 +17,8 @@ jobs:
     name: Bundle
     runs-on: ubuntu-latest
     permissions:
-      actions: write
-      checks: write
+      actions: read
+      checks: read
       contents: write
       deployments: read
       discussions: read
