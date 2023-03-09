@@ -20,9 +20,9 @@ jobs:
       actions: write
       checks: write
       contents: write
-      deployments: write
-      discussions: write
-      id-token: write
+      deployments: read
+      discussions: read
+      id-token: read
       issues: read
       packages: read
       pages: read
