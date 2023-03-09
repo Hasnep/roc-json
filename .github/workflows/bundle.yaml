@@ -22,7 +22,7 @@ jobs:
       contents: write
       deployments: read
       discussions: read
-      id-token: read
+      id-token: none
       issues: read
       packages: read
       pages: read
