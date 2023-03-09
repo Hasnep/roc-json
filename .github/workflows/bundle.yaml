@@ -29,3 +29,4 @@ jobs:
         uses: hasnep/bundle-roc-library@main
         with:
           library-path: ./Json/
+          token: ${{ github.token }}
