@@ -1,1 +1,1 @@
-package "HelloWorld" exposes [Core    ] packages {}
+package "HelloWorld" exposes [Core] packages {}

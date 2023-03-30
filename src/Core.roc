@@ -1,4 +1,4 @@
-interface Core exposes [        greet]    imports [ ]
+interface Core exposes [greet] imports []
 
 greet = \name -> "Hello, \(name)!"
 

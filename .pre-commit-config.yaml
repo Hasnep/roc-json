@@ -27,7 +27,7 @@ repos:
     hooks:
       - name: Lint Roc files
         id: check
-        args: [Json/main.roc]
+        args: [src/main.roc]
       - name: Format Roc files
         id: format
 
