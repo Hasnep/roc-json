@@ -20,7 +20,7 @@ jobs:
         with:
           roc-version: nightly
       - name: Generate docs
-        run: roc docs Json/main.roc
+        run: roc docs src/main.roc
       - name: Deploy docs
         uses: JamesIves/github-pages-deploy-action@v4
         with:
