@@ -1,3 +1,6 @@
+# Generated docs
+generated-docs/
+
 # Built libraries
 **/*.tar.br
 

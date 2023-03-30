@@ -8,7 +8,7 @@ on:
 
 jobs:
   generate-docs:
-    name: Bundle
+    name: Generate docs
     runs-on: ubuntu-latest
     permissions:
       pages: write
@@ -22,6 +22,9 @@ jobs:
           roc-version: nightly
       - name: Generate docs
         run: roc docs src/main.roc
+      - name: Fix absolute paths
+        run: |
+          find generated-docs/ -type f -name '*.html' -exec sed -i 's/\(href\|src\)="\//\1="\/roc-test-workflow\//g' {} +
       - name: Upload docs artifact
         uses: actions/upload-pages-artifact@v1
         with:
