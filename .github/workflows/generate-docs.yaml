@@ -21,7 +21,9 @@ jobs:
           roc-version: nightly
       - name: Generate docs
         run: roc docs src/main.roc
-      - name: Deploy docs
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Upload docs artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          folder: generated-docs
+          path: generated-docs
+      - name: Deploy docs
+        uses: actions/deploy-pages@v1
