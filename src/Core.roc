@@ -9,5 +9,5 @@ greet : Str -> Str
 greet = \name -> "Hello, \(name)!"
 
 expect
-    out = greet "World"
-    out == "Hello, World!"
+    greeting = greet "World"
+    greeting == "Hello, World!"
